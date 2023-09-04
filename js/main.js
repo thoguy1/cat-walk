@@ -1,4 +1,5 @@
 const catImage = document.querySelector('img');
+catImage.src = 'images/cat-walk.gif';
 const discoLights = document.createElement('div');
 document.body.appendChild(discoLights);
 
