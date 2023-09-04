@@ -66,7 +66,7 @@ const catWalk = function () {
 // Show dancing cat image and animating the size
 const showDancingCat = function() {
   const dancingCatImage = document.createElement('img');
-  dancingCatImage.src = 'image/giphy.gif';
+  dancingCatImage.src = 'images/giphy.gif';
   dancingCatImage.style.zIndex = '2';
   dancingCatImage.style.position = 'absolute';
   dancingCatImage.style.left = catImage.style.left;
@@ -140,7 +140,7 @@ const showDiscoLights = function () {
 
 const resumeCatWalk = function () {
   // Replace the image with the original cat walk image
-  catImage.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+  catImage.src = 'images/cat-walk.gif';
   catImage.style.top = (window.innerHeight / 3) + 'px';
 
   // Hide the disco lights
