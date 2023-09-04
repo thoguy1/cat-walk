@@ -1,11 +1,13 @@
 const catImage = document.querySelector('img');
-catImage.src = 'images/cat-walk.gif';
 const discoLights = document.createElement('div');
 document.body.appendChild(discoLights);
 
+catImage.src = 'images/cat-walk.gif';
 catImage.style.left = '0px';
 catImage.style.top = (window.innerHeight / 3) + 'px';
 //catImage.style.zIndex = '2'; // Ensure the cat image is displayed above the disco lights
+
+let catWalkInterval;
 
 // Set the initial direction to right
 let direction = 'right';
@@ -151,5 +153,6 @@ const resumeCatWalk = function () {
   catWalkInterval = setInterval(catWalk, 50);
 };
 
-let catWalkInterval = setInterval(catWalk, 50);
-
+window.onload = function() {
+  catWalkInterval = setInterval(catWalk, 50);
+}
